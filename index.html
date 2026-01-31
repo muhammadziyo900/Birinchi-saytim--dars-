@@ -4,9 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #eef6f3;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            width: 380px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+        }
+
+        .div1 {
+            text-align: center;
+            color: #10b981;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 8px;
+        }
+
+        .p1{
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .tabs {
+            display: flex;
+            background: #f1f5f9;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .btn1{
+            padding: 10px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .tab {
+            background: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 160px;
+            border-radius: 10px;
+            font-weight: 600;
+            border: none;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+            font-size: 14px;
+        }
+
+       
+
+        .btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #10b981;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+
+        .button {
+            width: 100%;
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px solid #e5e7eb;
+            background: #fff;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .p{
+            margin-top: 20px;
+            font-size: 12px;
+            color: #6b7280;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Heelo world</h1>
-    <p>Lorem ipsum dolor sit.</p>
+
+<div class="card">
+    <div class="div1">QUIZO UZ</div>
+
+    <h1>Kirish</h1>
+    <p class="p1">Davom etish uchun tizimga kiring.</p>
+
+    <div class="tabs">
+        <button class="tab">Kirish</button>
+        <button class="btn1">Ro'yxatdan o'tish</button>
+    </div>
+
+    <form>
+        <label>Elektron pochta</label>
+        <input type="email" placeholder="siz@example.com">
+
+        <label>Parol</label>
+        <input type="password" placeholder="Kamida 6 ta belgi">
+
+        <button class="btn">Kirish</button>
+    </form>
+
+    <button class="button">
+        Google bilan kirish
+    </button>
+
+    <p class="p">
+        Davom etish orqali siz shartlarga rozilik bildirasiz.
+    </p>
+</div>
 </body>
 </html>
